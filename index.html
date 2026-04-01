@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BarberFlow Beta</title>
+  <style>
+    :root{--bg:#f8fafc;--card:#ffffff;--text:#0f172a;--muted:#475569;--accent:#0ea5e9;--line:#e2e8f0}
+    *{box-sizing:border-box} body{margin:0;font-family:Inter,Arial,sans-serif;background:var(--bg);color:var(--text)}
+    .wrap{max-width:920px;margin:0 auto;padding:42px 18px}
+    .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:30px;box-shadow:0 8px 24px rgba(15,23,42,.06)}
+    h1{margin:0 0 10px;font-size:clamp(1.7rem,4vw,2.5rem)} p{margin:0;color:var(--muted)}
+    .hero{margin-bottom:26px}.cta{display:inline-block;margin-top:16px;padding:11px 16px;background:var(--accent);color:#fff;text-decoration:none;border-radius:10px;font-weight:600}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin:22px 0}
+    .box{border:1px solid var(--line);background:#f8fafc;border-radius:10px;padding:12px}
+    form{display:grid;gap:10px;margin-top:20px}
+    input,select,button{padding:11px;border-radius:9px;border:1px solid var(--line);font-size:.95rem}
+    button{background:var(--text);color:#fff;border:none;font-weight:600;cursor:pointer}
+    .small{font-size:.82rem;color:#64748b;margin-top:10px}
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <section class="card hero">
+      <h1>Fill more chairs. Cut no-shows.</h1>
+      <p>BarberFlow helps barbershops and salons manage bookings, waitlists, and reminders in one simple workflow.</p>
+      <a class="cta" href="#beta">Join Beta</a>
+    </section>
+
+    <section class="card">
+      <h2>How it works</h2>
+      <div class="grid">
+        <div class="box"><strong>Book</strong><p>Customers book fast from their phone.</p></div>
+        <div class="box"><strong>Waitlist</strong><p>Walk-ins join queue and get notified when a slot opens.</p></div>
+        <div class="box"><strong>Remind</strong><p>Automatic reminders reduce no-shows and late arrivals.</p></div>
+      </div>
+      <div class="grid">
+        <div class="box"><strong>Owner Dashboard</strong><p>Track bookings, cancellations, and busiest hours daily.</p></div>
+        <div class="box"><strong>Repeat Customers</strong><p>See who comes back often and when they usually book.</p></div>
+      </div>
+    </section>
+
+    <section class="card" id="beta">
+      <h2>Join the Beta Waitlist</h2>
+      <p>Early access for selected shops.</p>
+      <form>
+        <input type="text" placeholder="Full Name" required>
+        <input type="text" placeholder="Shop Name" required>
+        <input type="tel" placeholder="Phone Number" required>
+        <input type="text" placeholder="City" required>
+        <select required>
+          <option value="">Daily appointments (approx)</option>
+          <option>1–10</option>
+          <option>11–20</option>
+          <option>21–40</option>
+          <option>40+</option>
+        </select>
+        <button type="submit">Join Beta</button>
+      </form>
+      <p class="small">By joining, you agree to receive beta updates and onboarding info.</p>
+    </section>
+  </main>
+</body>
+</html>
